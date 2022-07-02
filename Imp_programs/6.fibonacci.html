@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci series</title>
+</head>
+
+<body>
+    <script>
+        let first = 0, second = 1, third;
+        // const a = parseInt(prompt("Enter a value of a : "));
+        const n = parseInt(prompt("Enter the no of fibonacci numbers:"));
+        for (let i = 0; i < n; i++) {
+            document.write(first+"<br>");
+            third = first + second;
+            first = second;
+            second = third;
+        }
+
+    </script>
+</body>
+
+</html>

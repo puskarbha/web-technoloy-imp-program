@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number</title>
+
+
+</head>
+
+<body>
+    <script>
+            let arm = 0;
+            let num=parseInt(prompt("Enter the number : "));
+            let temp=num;
+            length=temp.toString().length;
+
+            while(temp>0){
+                a=temp%10;
+                arm=arm+a**length;
+                temp=parseInt(temp/10);
+            }
+
+            // document.write("the value of arm is:"+arm);
+            // document.write("the value of num is:"+num);
+            if(arm==num){
+                document.write("the given number is a armstrong number");
+            }
+            else{
+                document.write("The given number is a not armstrong number");
+            }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime NUmber</title>
+    </head>
+    
+    <body>
+        <script>
+             let num = parseInt(prompt("Enter a Positive number "));
+            isprime=true;
+            if(num==0){
+                alert("1 is nerither prime nor composite");
+            }
+            else if( num>0 ) {
+               for(i=2;i<num;i++){
+                    if(num%i==0){
+                        isprime=false;
+                        break;
+                    }
+                }
+                if(isprime){
+                    document.write(num+" is a Prime number")
+                }
+                else{
+                    document.write(num+" is a not Prime number")
+                }
+            }
+            else{
+                document.write("negative number "+num+" cannot be  a Prime number")
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOTYPE HTML>
+<html>
+    <head>
+        <title>Print Prime Numbers</title>
+    </head>
+    <body>
+        <script>
+           
+        let ll = parseInt(prompt("enter the lower limit "));
+        let hl = parseInt(prompt("enter the higher limit"));
+        for(i=ll;i<hl;i++){
+            flag=0;
+            for(j=2;j<i;j++){
+                if(i%j==0){
+                    flag=1;
+                    break;
+                }
+            }
+            if(i>1 && flag==0){
+                document.write(i+"  ");
+            }
+        }
+     
+        </script>
+    </body>
+</html>
